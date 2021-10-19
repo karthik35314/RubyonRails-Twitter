@@ -1,0 +1,20 @@
+
+<div class="tweet-box" style="background-color:rgb(21, 32, 43);">
+
+  <h1 style="color:#aaaaaa">Tweet</h1>
+  <%= form_with model: current_user.tweets.new, local: true do |form| %>
+    <div class="field" style="background-color:rgb(21, 32, 43);">
+      <%= form.text_area :content, placeholder: "Compose new Tweet..." ,class:"voilet"%>
+    </div>
+    <div class="btn-toolbar justify-content-between ml-5">
+      <div class="btn-group m-0 p-0">
+        <%= form.file_field :image, accept: "image/jpeg,image/gif,image/png" %>
+      </div>
+      <div class="btn-group m-0 p-0">
+        <div style="margin-left: 19rem">
+        <%= form.submit "Post", class: "btn btn-large btn-primary" %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
