@@ -22,46 +22,10 @@ $ bundle exec rails db:migrate
 $ bundle exec rails server
 ```
 
-## Features
 
-This application doesn't provide many features in order to keep it simple. Here are the features that it does include:
 
-* See TimeLine
-* Post new Tweet
-* Follow/Unfollow User
 
-## Used gem
 
-### JavaScript
-
-- webpacker
-
-### For CSS Style
-
-* bootstrap-sass
-* font-awesome-sass
-
-### For testing
-
-* capybara
-* factory_bot
-* faker
-* rspec
-* simplecov
-
-### For debugging
-
-* bullet
-* pry-byebug
-* pry-rails
-* web-console
-
-See more details on [Gemfile](./Gemfile).
-
-## Testing
-
-```console
-$ bundle exec rspec
 ```
 
 ## Data reset and sample data creation
